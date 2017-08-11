@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Blogs Mexico Ping 1.0</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Aptana IDE - The Web 2.0 IDE">
+<meta name="version" content="build 0.2.0.10299">
+<style type="text/css" media="screen">
+<!--
+	html
+	{
+	  background: #eee;
+	}
+	body
+	{
+	  background: #fff;
+	  color: #000;
+	  font-family: Georgia, "Times New Roman", Times, serif;
+	  margin-left: 25%;
+	  margin-right: 25%;
+	  padding: .2em 2em;
+	}
+	
+	h1
+	{
+	  color: #006;
+	  font-size: 18px;
+	  font-weight: lighter;
+	}
+	
+	h2
+	{
+	  color: #006;
+	  font-size: 24px;
+	  font-weight: lighter;
+	}
+	
+	p, li
+	{
+	  line-height: 140%;
+	  padding-bottom: 2px;
+	}
+
+	ul, ol
+	{
+	  padding: 5px 5px 5px 20px;
+	}
+-->
+</style>
+</head>
+<body>
+<h2 id="titulo" style="text-align: center">Blogs Mexico Ping</h2>
+<h1 id="subtitulo" style="text-align: center">Version 1.0</h1>
+<br />
+
+<h1 id="atencion">Atencion!</h1>
+<p>
+Le recordamos que este plugin no puede funcionar, sin que haya registrado previamente
+su blog en el "Directorio de Bitacoras Mexicanas" de blogsmexico.com
+</p>
+<p>
+Para realizar este paso de click al siguiente enlace:<br/>
+<a href="http://www.blogsmexico.com/registro">http://www.blogsmexico.com/registro</a>
+</p>
+
+<h1 id="introduccion">Introduccion</h1>
+<p>
+Blogs Mexico Ping, es un plugin dise&ntilde;ado para funcionar bajo WordPress 2.0.x,
+el cual sirve para enviar pings de manera automatica cada vez que publiquemos una nueva entrada
+o editemos una previa.
+</p>
+
+<h1 id="requerimientos">Requerimientos</h1>
+<ul>
+  <li>PHP 4.1 (o mayor)</li>
+  <li>Soporte para sockets</li>
+  <li>WordPress 2.0.x</li>
+</ul>
+
+<h1 id="instalacion">Configuracion e Instalacion</h1>
+<ol>
+	<li>Desempaca el Archivo en un directorio vacio</li>
+	<li>Abre con cualquier editor el archivo "blogs_mexico_ping.php"</li>
+	<li>
+	En las lineas 42 y 45, se encuentran las variables a cambiar, que corresponden
+	al titulo y a la URL respectivamente, le recordamos poner exactamente la informacion
+	como la registro. 
+	</li>
+	<li>
+	Subir el archivo guardado al directorio "/wp-content/plugins/".
+	</li>
+	<li>
+	Entra a tu panel de administracion o dashboard y activa el plugin
+	</li>
+	<li>
+	Listo ahora cada vez que publiques o edites una entrada, sera notificado
+	de manera automatica blogsmexico.
+	</li>
+	
+</ol>
+
+<h1 id="faq">FAQ's</h1>
+<ul>
+	<li>
+	<b>&iquest;Como se que mi servidor cuenta con soporte para sockets?</b><br>
+	<b>R:</b> Se hace sacando la informacion de PHP, atravez de la funcion phpinfo()
+	crea un archivo que contenga algo como: "&lt;?php phpinfo();?&gt;"<br/>
+	una vez que lo ejecutes checa que en el modulo de sockets el soporte se encuentre en modo "enabled" 
+	</li>
+	<li>
+	<b>&iquest;Por que no aparezco en la lista de actualizados?</b><br/>
+	<b>R:</b> Primero checa que se encuentre activado el plugin, segundo checa el soporte de sockets,
+	tercero checa que el titulo y url sean los correctos, si aun asi no sirve te pido me contactes
+	para tratar de solucionar tu problema y ver si es algun fallo del software
+	</li>
+	<li>
+	<b>&iquest;Por que hiciste el plugin?</b><br/>
+	<b>R:</b> Por que me daba flojera ir cada vez y de manera manual rellenar
+	el formulario por cada nota nueva, asi basicamente siguo manteniendo una 
+	pseudo funcion ping, como la de wordpress pero especialmente dise&ntilde;ada para
+	blogsmexico.com
+	</li>
+	<li>
+	<b>&iquest;Piensas Mejorar el plugin?</b><br/>
+	<b>R:</b> Todo depende del rumbo que lleve el plugin
+	</li>
+	<li>
+	<b>&iquest;Tengo ideas, asi como codigo que puede mejorar tu plugin, que hago?</b><br/>
+	<b>R:</b> Contactarme a mi correo g30rg3x@gmail.com
+	</li>
+</ul>
+
+<h1 id="notas">Notas Finales</h1>
+<p>
+Este plugin fue realizado realmente para uso personal, pero le comente
+a algunas personas sobre el y parecio gustarles la idea de automatizar
+desde el nivel de wordpress y me pidieron que lo haga publico.<br/>
+Otra cosa que tengo en mente, es que blogs mexico de momento a otro
+implemente un sistema de <a href="http://es.wikipedia.org/wiki/Captcha">Captchas</a>,
+el cual evitaria que estos robots puedan acceder al envio de informacion, con lo cual
+abria acabado el tiempo de vida de este plugin (a menos que implemente un algoritmo anti-captcha)<br/>
+Espero les sirva este plugin para asi seguir automatizados y jugando limpio.
+saludos
+<br/>
+<p style="text-align: right">&mdash; g30rg3_x</p>
+</p>
+
+<h1 id="licencia">Licencia</h1>
+<p>
+Blogs Mexico Ping, esta liberado bajo la licencia <abbr title="GNU Public License">GPL</abbr>, 
+para obtener detalles sobre esta favor de leer el archivo adjunto llamado <a href="licencia.txt">"licencia.txt"</a>.
+</p>
+
+<p style="text-align: center">
+<img src="http://img333.imageshack.us/img333/7812/hechoenmexicologoab9.jpg"></img>
+</p>
+</body>
+</html>
